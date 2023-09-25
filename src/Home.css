@@ -1,0 +1,12 @@
+.Home {
+    text-align: center;
+  }
+
+.landingpage img{
+    height: 90.5vh;
+    width: 100vw;
+}
+  
+.landingpage-text{
+    float: right;
+}
