@@ -1,6 +1,7 @@
 import "./home.css";
 import Card from "./card.js";
 import Landing from "./landing.js";
+import Testimonial from "./testimonial";
 import { Grid } from "@mui/material";
 import { Container } from "@mui/material";
 
@@ -16,6 +17,7 @@ const home = () => {
           <Card />
         </Grid>
       </Container>
+    <Testimonial/>
     </>
   );
 };
