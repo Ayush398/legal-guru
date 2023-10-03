@@ -8,7 +8,7 @@ const landing = () => {
           <Paper elivation={6}>
             <img
               src={require("../images/Gabbar.jpg")}
-              className="landing-img"
+              className="home-img"
             ></img>
             <Typography variant="h6" component="h2">
               Gabbar Singh
