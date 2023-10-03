@@ -5,20 +5,7 @@ const landing = () => {
   return (
     <>
       <div className="landing-page">
-        <header>
-          <div className="container">
-            <a href="#" className="logo">
-              Your <b>Website</b>
-            </a>
-            <ul className="links">
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Work</li>
-              <li>Info</li>
-              <li>Get Started</li>
-            </ul>
-          </div>
-        </header>
+        
         <div className="content">
           <div className="container">
             <div className="info">
