@@ -138,127 +138,7 @@ a {
   max-width: 100%;
 }
 
-/* .testimonials {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    @include mobile{
-      justify-content: space-around;
-    }
-  
-  
-    h1 {
-      font-size: 50px;
-  
-      @include mobile{
-        font-size: 20px;
-      }
-    }
-  
-    .container {
-      width: 100%;
-      height: 80%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  
-      @include mobile{
-        flex-direction: column;
-        height: 100%;
-      }
-  
-      .card {
-        width: 250px;
-        height: 70%;
-        border-radius: 10px;
-        box-shadow: 0px 0px 15px -8px black;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 20px;
-        transition: all 1s ease;
-  
-        @include mobile{
-          height: 180px;
-          margin: 10px 0;
-        }
-  
-        &.featured{
-            width: 300px;
-            height: 75%;
-            margin: 0 30px;
-  
-            @include mobile{
-              width: 250px;
-              height: 180px;
-              margin: 1px;
-            }
-        }
-  
-        &:hover{
-            transform: scale(1.1);
-        }
-  
-        .top {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-  
-          img {
-            &.left,
-            &.right {
-              height: 25px;
-            }
-            &.user {
-              height: 60px;
-              width: 60px;
-              border-radius: 50%;
-              object-fit: cover;
-              margin: 0 30px;
-  
-              @include mobile{
-                width: 30px;
-                height: 30px;
-              }
-            }
-          }
-        }
-  
-        .center {
-          padding: 10px;
-          border-radius: 10px;
-          background-color: rgb(250, 244, 245);
-  
-          @include mobile{
-            font-size: 12px;
-            padding: 5px;
-          }
-        }
-        .bottom {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          justify-content: center;
-  
-          h3 {
-            margin-bottom: 5px;
-  
-            @include mobile{
-              font-size: 14px;
-            }
-          }
-          h4{
-              color: rgb(121, 115, 115);
-              @include mobile{
-                font-size: 13px;
-              }
-          }
-        }
-      }
-    }
-  } */
+/* --------------------------- TESTIMONIALS -------------------------------- */
 
 .testimonials {
   background-color: white;
@@ -308,6 +188,7 @@ a {
   justify-content: space-around;
   padding: 20px;
   transition: all 1s ease;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -351,7 +232,7 @@ a {
   width: 60px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 30px;
+  margin: 15px 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -400,3 +281,228 @@ a {
     font-size: 13px;
   }
 }
+
+/*---------------------------- FAQ ------------------------------*/
+
+.faq::before,
+.faq::after {
+  box-sizing: border-box;
+}
+.faq {
+  margin: 0;
+  padding: 0;
+  font-family: "Hind", sans-serif;
+  background: #fff;
+  color: #4d5974;
+  display: flex;
+  min-height: 70vh;
+}
+.faq-container {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion .accordion-item button[aria-expanded="true"] {
+  border-bottom: 1px solid #03b5d2;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded="true"] {
+  color: #03b5d2;
+}
+.accordion button[aria-expanded="true"] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+/*-------------------------------- FOOTER ------------------------------------*/
+
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #070617;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+.footer .col ul li:hover {
+  color: #fff;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer .col {
+    width: 50%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+
+/*-------------------------------- CARDs ----------------------------------*/
+/* 
+.card {
+  
+  min-height: 400px;
+  max-height: 600px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 20px #0000007a;
+}
+
+.card-body {
+  padding: 0px 15px;
+  color: white;
+}
+ */
