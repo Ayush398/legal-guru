@@ -252,7 +252,7 @@ a {
 .testimonials .container .card .center {
   padding: 10px;
   border-radius: 10px;
-  background-color: rgb(250, 244, 245);
+  background-color: rgb(232, 242, 255);
 }
 
 @media screen and (max-width: 768px) {
