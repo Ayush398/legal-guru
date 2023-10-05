@@ -5,6 +5,7 @@ import Services from './services.js';
 import Testimonial from "./testimonial";
 import FAQ from "./faq"
 import Footer from "./footer.js"
+import Subscription from "./subscription.js"
 import { Grid } from "@mui/material";
 import { Container } from "@mui/material";
 
@@ -15,8 +16,10 @@ const home = () => {
     <Services/>
     <Card/>
     <Testimonial/>
+    <Subscription/>
     <FAQ/>
     <Footer/>
+    
     </>
   );
 };
