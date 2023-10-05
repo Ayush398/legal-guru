@@ -1,6 +1,7 @@
 import "./home.css";
 import Card from "./card.js";
-import Landing from "./landing.js";
+import Landing from "./landing.js"
+import Services from './services.js';
 import Testimonial from "./testimonial";
 import FAQ from "./faq"
 import Footer from "./footer.js"
@@ -11,6 +12,7 @@ const home = () => {
   return (
     <>
     <Landing />
+    <Services/>
     <Card/>
     <Testimonial/>
     <FAQ/>
